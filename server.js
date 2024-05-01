@@ -55,6 +55,12 @@ app.get('/update',(req,res)=>{
     })
 })
 
+app.get("/delemployee", (req,res)=>{
+    delEmp('').then((msg)=>{
+        res.send(msg)
+    })
+})
+
 
 
 app.listen(3000,()=>{
