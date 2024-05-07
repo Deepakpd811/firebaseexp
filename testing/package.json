@@ -1,0 +1,23 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "chai": "^4.1.0",
+    "chai-http": "^4.4.0",
+    "express": "^4.19.2",
+    "mocha": "^10.4.0",
+    "nodemon": "^3.1.0",
+    "request": "^2.88.2"
+  }
+}

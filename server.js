@@ -1,6 +1,6 @@
 import express from "express";
 const app = express();
-import  {addEmp,emplist,updateEmp}  from "./firebase.config.js";
+import  {addEmp,emplist,updateEmp,delEmp}  from "./firebase.config.js";
 
 
 
@@ -56,7 +56,7 @@ app.get('/update',(req,res)=>{
 })
 
 app.get("/delemployee", (req,res)=>{
-    delEmp('').then((msg)=>{
+    delEmp('343Z5qpaWwxZK97U6Lss').then((msg)=>{
         res.send(msg)
     })
 })

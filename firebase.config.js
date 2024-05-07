@@ -50,9 +50,9 @@ export async function updateEmp(empdata)
 export async function delEmp(empid)
 {
   const empRef = collection(filestoreobj,"employee")
-  const recordRef =  await doc(empRef,empid)
+  const empdocobj =  await doc(empRef,empid)
   
-  await deleteDoc(empdocobj,empdata)
+  await deleteDoc(empdocobj,empid)
 
   return "data updated";
 }
